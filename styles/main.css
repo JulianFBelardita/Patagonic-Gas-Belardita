@@ -17,22 +17,11 @@ form {
 h2 {
   color: #e2703a; }
 
-table {
-  border: 5px solid #000;
-  margin: auto;
-  font-size: 20px;
-  width: 750px; }
-
 th {
   color: #e2703a;
   border-bottom: 5px solid #000;
   text-align: center; }
-
-td {
-  border: 5px solid #000;
-  text-align: left;
-  padding-left: 50px; }
-
+  
 /* Estilos por clases */
 .index {
   display: flex;
@@ -47,16 +36,21 @@ td {
       margin: auto;
       display: block;
       background-size: cover; }
-
+.d-block {
+  margin: auto;
+}
+.carousel-control-next, .carousel-control-prev {
+width: 50%;
+}
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #a3d2ca;
+  background-color: #a3d2ca !important;
   width: 100%;
-  position: absolute;
   height: auto;
   bottom: 0;
-  border-top: 4px solid #000; }
+  border-top: 0.15rem solid #000;
+  }
   .footer__flex {
     display: flex;
     justify-content: flex-start;

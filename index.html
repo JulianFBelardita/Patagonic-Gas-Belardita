@@ -7,7 +7,6 @@
     <title>Patagonic Gas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css" />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> -->
   </head>
   <body>
       <!-- Encabezado con menu-->
@@ -28,50 +27,53 @@
         </div>
       </nav>
       <!--Contenido de la pagina-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-6 index__parrafo">
-          <p>Somos una empresa metalúrgica dedicada a resolver los problemas y desafios que presentan nuestros clientes. Trabajamos en la constante innovación y desarrollo, brindando un servicio a la medida de cada cliente. </p>
+    <main class="flex-shrink-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-6 index__parrafo">
+            <p>Somos una empresa metalúrgica dedicada a resolver los problemas y desafios que presentan nuestros clientes. Trabajamos en la constante innovación y desarrollo, brindando un servicio a la medida de cada cliente. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carousel__index" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/maquinas.jpg" class="d-block" alt="Foto de máquinas de la fábrica" width="725px" height="522px">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/maquinas2.png" class="d-block" alt="Otras máquinas" width="725px" height="522px">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/plato-enlozado-index.png" class="d-block" alt="Plato enlozado" width="725px" height="522px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel__index" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel__index" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div> 
+    </main>
+      <!--Pie de Página-->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <div>
+          <a href="https://www.facebook.com/Patagonic-Gas-392876511082969"><img src="./imagenes/facebook-logo.png" alt="Logo Facebook"/></a>
+          <a href="https://www.instagram.com/patagonicgas/"><img src="./imagenes/instagram-logo.png" alt="Logo Instagram"/></a>
         </div>
       </div>
-      <div class="row">
-        <div id="carousel__index" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel__index" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./imagenes/maquinas.jpg" class="d-block w-100" alt="Foto de máquinas de la fábrica" width="725px" height="522px">
-            </div>
-            <div class="carousel-item">
-              <img src="./imagenes/maquinas2.png" class="d-block w-100" alt="Otras máquinas" width="725px" height="522px">
-            </div>
-            <div class="carousel-item">
-              <img src="./imagenes/plato-enlozado-index.png" class="d-block w-100" alt="Plato enlozado" width="725px" height="522px">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel__index" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel__index" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </div>  
-      <!--Pie de Página-->
-    <div class="container-fluid">
-      <footer class="footer">
-          <div class="footer__flex">
-            <a href="https://www.facebook.com/Patagonic-Gas-392876511082969"><img src="./imagenes/facebook-logo.png" alt="Logo Facebook"/></a>
-            <a href="https://www.instagram.com/patagonicgas/"><img src="./imagenes/instagram-logo.png" alt="Logo Instagram"/></a>
-          </div>
-          <div class="footer__flex--datos">©Patagonic Gas SRL 2021 - Desarrollado por Julián Belardita</div>
-      </footer>
-    </div>
+      <div class="footer__flex--datos">©Patagonic Gas SRL 2021 - Desarrollado por Julián Belardita</div>    
+    </footer>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
