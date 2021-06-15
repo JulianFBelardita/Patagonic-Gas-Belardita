@@ -31,7 +31,7 @@ th {
   margin: auto;
 }
 .carousel-control-next, .carousel-control-prev {
-width: 50%;
+width: 25%;
 }
 .footer {
   display: flex;
