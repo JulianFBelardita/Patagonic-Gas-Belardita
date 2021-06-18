@@ -1,0 +1,25 @@
+{
+  "name": "patagonic-gas-belardita",
+  "version": "1.0.0",
+  "description": "sitio web pyme patagonic gas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/main.scss styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianFBelardita/Patagonic-Gas-Belardita.git"
+  },
+  "author": "Julian Francisco Belardita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianFBelardita/Patagonic-Gas-Belardita/issues"
+  },
+  "homepage": "https://github.com/JulianFBelardita/Patagonic-Gas-Belardita#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
