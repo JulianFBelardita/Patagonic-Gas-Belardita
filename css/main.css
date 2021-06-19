@@ -84,11 +84,15 @@ th {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
+  transition: .3s ease-in-out;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
 
 .img-metalurgia:hover {
   -webkit-filter: grayscale(0);
-  filter: grayscale(0); }
+  filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05); }
 
 .contacto {
   font-size: 1rem; }
