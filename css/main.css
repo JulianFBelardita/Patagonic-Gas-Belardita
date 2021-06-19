@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  position: relative;
+  min-height: 100vh; }
+
+form {
+  color: #fc9b24;
+  text-align: center; }
+
+h2 {
+  color: #fc9b24; }
+
+th {
+  color: #fc9b24;
+  text-align: center; }
+
+/* Estilos por clases */
+.index__parrafo {
+  color: #000;
+  text-align: center;
+  font-size: larger; }
+
+.d-block {
+  margin: auto; }
+
+.carousel-control-next, .carousel-control-prev {
+  width: 20%; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a3d2ca !important;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  border-top: 0.15rem solid #000; }
+  .footer__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer__flex--datos {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fc9b24;
+      font-size: 20px;
+      font-weight: bolder; }
+
+.botones__menu {
+  text-decoration: none !important;
+  color: #fc9b24 !important; }
+
+.productos__parrafo {
+  margin-left: 20px;
+  color: #000;
+  font-size: large; }
+
+.table-responsive {
+  font-size: 1rem; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .servicios__listado {
+    font-size: 1rem;
+    margin: auto;
+    padding-left: 15px; }
+
+.quienesSomos__cont--parrafo {
+  margin-left: 20px;
+  color: #000;
+  font-size: large; }
+
+.img-metalurgia {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.img-metalurgia:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
+
+.contacto {
+  font-size: 1rem; }
+
+.card {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.card:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2); }
+
+.card-title {
+  font-weight: bold;
+  text-align: center; }
+
+.card-text {
+  font-weight: lighter;
+  text-align: center;
+  border-top: 0.1rem solid #000; }

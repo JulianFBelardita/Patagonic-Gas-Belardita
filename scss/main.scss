@@ -1,0 +1,116 @@
+@import "../partials/variables";
+@import "../partials/reset";
+
+body {
+  background-color: $color-fondo;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: $size-rem;
+  font-weight: normal;
+  position: relative;
+  min-height: 100vh; }
+
+form {
+  color: $color-titulos;
+  text-align: center; }
+
+h2 {
+  color: $color-titulos; }
+
+th {
+  color: $color-titulos;
+  text-align: center; }
+
+/* Estilos por clases */
+.index__parrafo {
+    color: $color-parrafo;
+    text-align: center;
+    font-size: larger; 
+}
+.d-block {
+  margin: auto;
+}
+.carousel-control-next, .carousel-control-prev {
+width: 20%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-principal !important;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  border-top: $size-rem / 10 solid $color-parrafo;
+
+  &__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    	&--datos {
+      	display: flex;
+      	justify-content: flex-end;
+      	align-items: center;
+      	color: $color-titulos;
+      	font-size: $size * 4;
+      	font-weight: bolder;
+	      }
+    }
+}
+
+.botones__menu {
+  text-decoration: none !important;
+  color: $color-titulos !important;
+}
+.productos__parrafo {
+  margin-left: $size * 4;
+  color: $color-parrafo;
+  font-size: large; }
+.table-responsive{
+font-size: $size-rem / 1.5;
+}
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	&__listado {
+    font-size: $size-rem / 1.5;
+   	margin: auto;
+    padding-left: $size * 3; 
+  }
+}
+.quienesSomos__cont--parrafo {
+  margin-left: $size * 4;
+  color: $color-parrafo;
+  font-size: large; }
+.img-metalurgia {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-metalurgia:hover {
+  -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.contacto {
+font-size: $size-rem / 1.5;
+}
+.card {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.2);
+}
+.card-title{
+  font-weight: bold;
+  text-align: center;
+}
+.card-text {
+  font-weight: lighter;
+  text-align: center;
+  border-top: $size-rem / 15 solid $color-parrafo;
+}
