@@ -100,12 +100,16 @@ font-size: $size-rem / 1.5;
 font-size: $size-rem / 1.5;
 }
 .card {
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 .card:hover {
+  -webkit-filter: grayscale(0);
+	filter: grayscale(0);
   -webkit-transform: scale(1.3);
 	transform: scale(1.2);
 }
@@ -117,4 +121,10 @@ font-size: $size-rem / 1.5;
   font-weight: lighter;
   text-align: center;
   border-top: $size-rem / 15 solid $color-parrafo;
+}
+@media screen and (min-width: 1200px) {
+  .footer__qs {
+    position: absolute;
+    bottom: 0;
+  }
 }

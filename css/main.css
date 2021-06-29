@@ -98,12 +98,16 @@ th {
   font-size: 1rem; }
 
 .card {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
 .card:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
   -webkit-transform: scale(1.3);
   transform: scale(1.2); }
 
@@ -115,3 +119,8 @@ th {
   font-weight: lighter;
   text-align: center;
   border-top: 0.1rem solid #000; }
+
+@media screen and (min-width: 1200px) {
+  .footer__qs {
+    position: absolute;
+    bottom: 0; } }
